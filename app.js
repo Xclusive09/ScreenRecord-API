@@ -7,10 +7,20 @@ const videoRoutes = require('./Routes/videoRoutes');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://Xclusive:Akolade1234@restapi.wstlbei.mongodb.net/videoDB?retryWrites=true&w=majority', {
+const uri = 'mongodb+srv://Xclusive:Akolade1234@restapi.wstlbei.mongodb.net/videoDB?retryWrites=true&w=majority';
+
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  // Other options if needed
 });
+// Check if the connection was successful
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+db.once('open', () => {
+  console.log('Connected to MongoDB');
+});
+
 
 app.use(express.json());
 
