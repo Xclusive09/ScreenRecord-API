@@ -9,6 +9,8 @@ const app = express();
 
 const uri = 'mongodb+srv://Xclusive:Akolade1234@restapi.wstlbei.mongodb.net/videoDB?retryWrites=true&w=majority';
 
+
+
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
