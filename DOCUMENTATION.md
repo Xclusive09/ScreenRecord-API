@@ -2,7 +2,7 @@
 - The Screen Record API allows you to manage screen recording videos. You can create new videos, retrieve a list of all videos, and get specific videos by their IDs.
 
 ## Base URL
-- The base URL for all API endpoints is: https://your-api-base-url.com/api
+- The base URL for all API endpoints is: (https://helpmeoutapi.onrender.com)
 
 ## Authentication
 - This API does not require authentication. It's open for public use.
@@ -38,7 +38,7 @@ json
   "id": "12345",
   "title": "Sample Video",
   "description": "A short description of the video",
-  "videoUrl": "https://your-api-base-url.com/api/videos/12345"
+  "videoUrl": "https://helpmeoutapi.onrender.com/api/videos/12345"
 }
 ```
 2. Get All Videos
@@ -53,7 +53,7 @@ json
 ```
 https
 
-GET https://your-api-base-url.com/api/videos
+GET https://helpmeoutapi.onrender.com/api/videos
 Content-Type: application/json
 ```
 Response
@@ -71,13 +71,13 @@ json
     "id": "12345",
     "title": "Sample Video 1",
     "description": "A short description of the first video",
-    "videoUrl": "https://your-api-base-url.com/api/videos/12345"
+    "videoUrl": "https://helpmeoutapi.onrender.com/api/videos/12345"
   },
   {
     "id": "67890",
     "title": "Sample Video 2",
     "description": "A short description of the second video",
-    "videoUrl": "https://your-api-base-url.com/api/videos/67890"
+    "videoUrl": "https://helpmeoutapi.onrender.com/api/videos/67890"
   }
 ]
 ```
@@ -95,7 +95,7 @@ json
 
 ```
 http
-GET https://your-api-base-url.com/api/videos/12345
+GET https://helpmeoutapi.onrender.com/api/videos/12345
 Content-Type: application/json
 ```
 
@@ -111,7 +111,7 @@ json
   "id": "12345",
   "title": "Sample Video 1",
   "description": "A short description of the video",
-  "videoUrl": "https://your-api-base-url.com/api/videos/12345"
+  "videoUrl": "https://helpmeoutapi.onrender.com/api/videos/12345"
 }
 ```
 
