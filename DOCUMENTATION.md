@@ -21,7 +21,6 @@
 - Example Request:
 
 ### http
-Copy code
 POST https://your-api-base-url.com/api/videos
 Content-Type: multipart/form-data
 
